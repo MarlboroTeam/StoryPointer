@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-themes": "devextreme build",
-    "postinstall": "npm run build-themes"
+    "postinstall": "npm run build-themes",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +26,8 @@
     "devextreme": "20.1-stable",
     "devextreme-angular": "20.1-stable",
     "devextreme-schematics": "^1.2.3",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -40,6 +43,7 @@
     "codelyzer": "^5.1.2",
     "devextreme-cli": "latest",
     "devextreme-themebuilder": "20.1-stable",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -51,5 +55,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.4"
   }
 }
