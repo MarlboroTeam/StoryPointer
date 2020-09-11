@@ -1,10 +1,8 @@
 import {NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { DxPolarChartModule } from 'devextreme-angular';
+import { DxPolarChartModule,DxSliderModule } from 'devextreme-angular';
 import { Injectable } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
 
 export class Production {
     arg: string;
@@ -42,6 +40,11 @@ export class Service {
 })
 
 export class HomeComponent {
+    public valore1: number =10;
+    public valore2: number =10;
+    public valore3: number =10;
+    public valore4: number =10;
+    public valore5: number =10;
   productionData: Production[];
 
   constructor(service: Service) {

@@ -5,13 +5,52 @@
     id="chart"
     [useSpiderWeb]="true"
     title="Stima"
-    [dataSource]="productionData">
+    [(dataSource)]="productionData">
     <dxi-series valueField="lemons" name="Lemons"></dxi-series>
     <dxo-common-series-settings type="area"></dxo-common-series-settings>
     <dxo-export [enabled]="true"></dxo-export>
     <dxo-tooltip [enabled]="true"></dxo-tooltip>
 </dx-polar-chart>
-<!--barre-->PIPPO
-<mat-slider min="1" max="5" step="0.5" value="1.5">slider</mat-slider>
+<p style="font-size: 40px;">14 SP</p>
+Dimensione
+<dx-slider  id="slider" 
+        [min]="0"
+        [max]="10"
+        [step]="1"
+        [(value)]="productionData[0].lemons"
+        >
+    </dx-slider>
+    Complessità
+    <dx-slider id="slider2" 
+        [min]="0"
+        [max]="10"
+        [step]="1"
+        [(value)]="productionData[1].lemons"
+        >
+    </dx-slider>
+    Estraneità dominio
+    <dx-slider id="slider3" 
+        [min]="0"
+        [max]="10"
+        [step]="1"
+        [(value)]="productionData[2].lemons"
+        >
+    </dx-slider>
+    Rischio
+    <dx-slider id="slider4" 
+        [min]="0"
+        [max]="10"
+        [step]="1"
+        [(value)]="productionData[3].lemons"
+        >
+    </dx-slider>
+    Interazione Extra Team
+    <dx-slider id="slider5" 
+        [min]="0"
+        [max]="10"
+        [step]="1"
+        [(value)]="productionData[4].lemons"
+        >
+    </dx-slider>
 </div>
 </div>
