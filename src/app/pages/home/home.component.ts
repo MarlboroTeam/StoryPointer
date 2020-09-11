@@ -2,8 +2,9 @@ import {NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { DxPolarChartModule } from 'devextreme-angular';
-
 import { Injectable } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 export class Production {
     arg: string;
@@ -15,7 +16,7 @@ let productionData: Production[] = [{
     lemons: 10,
 }, {
     arg: "Complessità",
-    lemons: 5,
+    lemons: 5, 
 }, {
     arg: "Estraneità dominio",
     lemons: 3,

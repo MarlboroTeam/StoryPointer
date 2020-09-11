@@ -5,7 +5,8 @@ import { AuthGuardService } from './shared/services';
 import { HomeComponent } from './pages/home/home.component';
 import { DxPolarChartModule } from 'devextreme-angular';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 const routes: Routes = [
   
@@ -24,7 +25,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),BrowserModule,
-    DxPolarChartModule],
+    DxPolarChartModule, BrowserAnimationsModule, MatSliderModule],
   providers: [AuthGuardService],
   exports: [RouterModule],
   declarations: [HomeComponent],
